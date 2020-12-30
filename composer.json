@@ -1,0 +1,40 @@
+{
+    "name": "orbitale/vouch",
+    "description": "A tiny package to implement a \"voucher\" system in your project.",
+    "type": "library",
+    "require": {
+        "php": "^7.4|8.0",
+        "psr/log": "^1.1",
+        "doctrine/orm": "^2.8",
+        "symfony/security-core": "^5.0"
+    },
+    "require-dev": {
+        "symfony/form": "^5.0",
+        "symfony/routing": "^5.0",
+        "symfony/http-foundation": "^5.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orbitale\\Vouch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Orbitale\\Vouch\\": "src/"
+        }
+    },
+    "suggest": {
+        "symfony/form": "To use the built-in RedeemVoucherController in Symfony",
+        "symfony/routing": "To use the built-in RedeemVoucherController in Symfony",
+        "symfony/http-foundation": "To use the built-in RedeemVoucherController in Symfony"
+    },
+    "license": "AGPL-3",
+    "authors": [
+        {
+            "name": "Alex Rock Ancelet",
+            "email": "pierstoval@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
